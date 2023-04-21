@@ -39,36 +39,24 @@ function enter(){
     var missing = 0;
     if(day==-1){
         document.getElementById("e11").style.color = "hsl(0, 100%, 67%)";
-        document.getElementById("type11").style.color = "hsl(0, 100%, 67%)";
-        document.getElementById("dayinp").style.borderColor = "hsl(0, 100%, 67%)";
         missing = 1;
     }
     else{
         document.getElementById("e11").style.color = "white";
-        document.getElementById("type11").style.color = "hsl(0, 1%, 44%)";
-        document.getElementById("dayinp").style.borderColor = "hsl(0, 0%, 86%)";
     }
     if(month==-1){
         document.getElementById("e22").style.color = "hsl(0, 100%, 67%)";
-        document.getElementById("type22").style.color = "hsl(0, 100%, 67%)";
-        document.getElementById("monthinp").style.borderColor = "hsl(0, 100%, 67%)";
         missing = 1;
     }
     else{
         document.getElementById("e22").style.color = "white";
-        document.getElementById("type22").style.color = "hsl(0, 1%, 44%)";
-        document.getElementById("monthinp").style.borderColor = "hsl(0, 0%, 86%)";
     }
     if(year==-1){
         document.getElementById("e33").style.color = "hsl(0, 100%, 67%)";
-        document.getElementById("type33").style.color = "hsl(0, 100%, 67%)";
-        document.getElementById("yearinp").style.borderColor = "hsl(0, 100%, 67%)";
         missing = 1;
     }
     else{
         document.getElementById("e33").style.color = "white";
-        document.getElementById("type33").style.color = "hsl(0, 1%, 44%)";
-        document.getElementById("yearinp").style.borderColor = "hsl(0, 0%, 86%)";
     }
     var future = 0;
     if(missing==0){
@@ -90,23 +78,11 @@ function enter(){
         }
         if(future==1){
             document.getElementById("eyy").style.color = "hsl(0, 100%, 67%)";
-            document.getElementById("type11").style.color = "hsl(0, 100%, 67%)";
-            document.getElementById("type22").style.color = "hsl(0, 100%, 67%)";
-            document.getElementById("type33").style.color = "hsl(0, 100%, 67%)";
-            document.getElementById("yearinp").style.borderColor = "hsl(0, 100%, 67%)";
-            document.getElementById("monthinp").style.borderColor = "hsl(0, 100%, 67%)";
-            document.getElementById("dayinp").style.borderColor = "hsl(0, 100%, 67%)";    
             document.getElementById("emm").style.color = "white";
             document.getElementById("edd").style.color = "white";
         }
         else{
             document.getElementById("eyy").style.color = "white";
-            document.getElementById("type11").style.color = "hsl(0, 1%, 44%)";
-            document.getElementById("type22").style.color = "hsl(0, 1%, 44%)";
-            document.getElementById("type33").style.color = "hsl(0, 1%, 44%)";
-            document.getElementById("yearinp").style.borderColor = "hsl(0, 0%, 86%)";
-            document.getElementById("monthinp").style.borderColor = "hsl(0, 0%, 86%)";
-            document.getElementById("dayinp").style.borderColor = "hsl(0, 0%, 86%)";    
         }
     }
     var invalid =0;
@@ -114,35 +90,23 @@ function enter(){
         if(((month==1 || month ==3 || month ==5 || month==7 || month ==8 || month==10 || month==12) && day>31) ||
             ((month==4 || month ==6 || month ==9 || month==11) && day>30) || (month==2 && ((isleap(year)==1&&day>29) || (isleap(year)==0&&day>28)) )){
             document.getElementById("edd").style.color = "hsl(0, 100%, 67%)";
-            document.getElementById("type11").style.color = "hsl(0, 100%, 67%)";
-            document.getElementById("dayinp").style.borderColor = "hsl(0, 100%, 67%)";
             invalid = 1;
         }
         else{
             document.getElementById("edd").style.color = "white";
-            document.getElementById("type11").style.color = "hsl(0, 1%, 44%)";
-            document.getElementById("dayinp").style.borderColor = "hsl(0, 0%, 86%)";
         }
         if(month>12){
             if(day>31){
                 document.getElementById("edd").style.color = "hsl(0, 100%, 67%)";
-                document.getElementById("type11").style.color = "hsl(0, 100%, 67%)";
-                document.getElementById("dayinp").style.borderColor = "hsl(0, 100%, 67%)";
             }
             else{
                 document.getElementById("edd").style.color = "white";
-                document.getElementById("type11").style.color = "hsl(0, 1%, 44%)";
-                document.getElementById("dayinp").style.borderColor = "hsl(0, 0%, 86%)";
             }
             document.getElementById("emm").style.color = "hsl(0, 100%, 67%)";
-            document.getElementById("type22").style.color = "hsl(0, 100%, 67%)";
-            document.getElementById("monthinp").style.borderColor = "hsl(0, 100%, 67%)";
             invalid = 1;
         }
         else{
             document.getElementById("emm").style.color = "white";
-            document.getElementById("type22").style.color = "hsl(0, 1%, 44%)";
-            document.getElementById("monthinp").style.borderColor = "hsl(0, 0%, 86%)";
         }
     }
     if(invalid==0 && missing==0 && future==0){
@@ -187,6 +151,22 @@ function enter(){
         document.getElementById("type1").innerHTML = String(ansday);
         document.getElementById("type2").innerHTML = String(ansmonth);
         document.getElementById("type3").innerHTML = String(ansyear);
+    }
+    if(missing==1 || invalid==1 || future==1){
+        document.getElementById("type11").style.color = "hsl(0, 100%, 67%)";
+        document.getElementById("dayinp").style.borderColor = "hsl(0, 100%, 67%)";
+        document.getElementById("type33").style.color = "hsl(0, 100%, 67%)";
+        document.getElementById("yearinp").style.borderColor = "hsl(0, 100%, 67%)";
+        document.getElementById("type22").style.color = "hsl(0, 100%, 67%)";
+        document.getElementById("monthinp").style.borderColor = "hsl(0, 100%, 67%)";
+    }
+    else{
+        document.getElementById("type33").style.color = "hsl(0, 1%, 44%)";
+        document.getElementById("yearinp").style.borderColor = "hsl(0, 0%, 86%)";
+        document.getElementById("type22").style.color = "hsl(0, 1%, 44%)";
+        document.getElementById("monthinp").style.borderColor = "hsl(0, 0%, 86%)";
+        document.getElementById("type11").style.color = "hsl(0, 1%, 44%)";
+        document.getElementById("dayinp").style.borderColor = "hsl(0, 0%, 86%)";
     }
     if(day!=-1){
         document.getElementById("dayinp").value = day;

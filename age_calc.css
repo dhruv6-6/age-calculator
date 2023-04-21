@@ -6,7 +6,7 @@ html, body {
     display: flex;
     flex-direction: row;
 }
-.left_side{
+.left_side,.right_side{
     height: 100%;
     flex: 1;
     background-color: hsl(0, 0%, 94%);
@@ -17,11 +17,6 @@ html, body {
     background-color: white;
     display:flex;
     flex-direction: column;
-}
-.right_side{
-    height: 100%;
-    flex: 1;
-    background-color: hsl(0, 0%, 94%);
 }
 .top,
 .bottom{
@@ -128,10 +123,18 @@ html, body {
 .arrow{
     background-color: hsl(259, 100%, 65%);
 }
-.main3:hover .arrow{
+@media(hover:hover){
+    .main3:hover .arrow{
+        background-color: hsl(0, 0%, 8%);
+    }
+    .main3:hover{
+        background-color: hsl(0, 0%, 8%);
+    }
+}
+.main3:active .arrow{
     background-color: hsl(0, 0%, 8%);
 }
-.main3:hover{
+.main3:active{
     background-color: hsl(0, 0%, 8%);
 }
 .output{
