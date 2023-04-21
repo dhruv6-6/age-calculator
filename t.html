@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>age-calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel = "stylesheet" href = "t.css">
+    <script src = "t.js"></script>
+</head>
+<body class="main_body">
+    <div class="left_side"></div>
+    <div class="center_side">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="main">
+                <div class="main1">
+                    <div class="inp one">
+                        <div class="dispm" id ="type11">D A Y</div>
+                        <input type="text" class="inpa" id = "dayinp" placeholder="DD" oninput="storeday()">
+                        <div class = "error"><div class="errorf e1" id ="e11">This field is required</div></div>
+                        <div class = "error"><div class="errors ed" id ="edd">Must be a valid day</div></div>
+                    </div>
+                    <div class="inp">
+                        <div class="dispm" id ="type22">M O N T H</div>
+                        <input type="text" class="inpa" id = "monthinp" placeholder="MM" oninput="storemonth()">
+                        <div class = "error"><div class="errorf e2" id ="e22">This field is required</div></div>
+                        <div class = "error"><div class="errors em" id ="emm">Must be a valid month</div></div>
+                    </div>
+                    <div class="inp">
+                        <div class="dispm" id ="type33">Y E A R</div>
+                        <input type="text" class="inpa" id = "yearinp" placeholder="YYYY" oninput="storeyear()"">
+                        <div class = "error"><div class="errorf e3" id ="e33">This field is required</div></div>
+                        <div class = "error"><div class="errors ey" id ="eyy">Must be in the past</div></div>
+                    </div>
+                </div>
+                <hr class = "line">
+                <div class="main2">
+                    <div class="output">
+                        <div class="out years"><div class="y1" id = "type3">--</div><div class="y2">years</div></div>
+                        <div class="out months"><div class="y1" id = "type2">--</div><div class="y2">months</div></div>
+                        <div class="out days"><div class="y1" id = "type1">--</div><div class="y2">days</div></div>
+                    </div>
+                </div>
+                <button class="main3 " onclick="enter()">
+                    <svg class = "arrow " xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 44 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+                </button>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+    <div class="right_side"></div>
+</body>
+</html>
