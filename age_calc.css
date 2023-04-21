@@ -83,12 +83,13 @@ html, body {
     height: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 8px;
+    font-size: 9px;
     color:hsl(0, 1%, 44%);
 }
 .inpa{
     padding-left: 10px;
     border-color: hsl(0, 0%, 86%);
+    color:hsl(0, 0%, 8%);
     border-width: 1px;
     border-style:solid;
     border-radius: 5px;
@@ -97,9 +98,14 @@ html, body {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size:  20px;
+    caret-color: hsl(259, 100%, 65%);
 }
 .inpa:hover{
     border-color: hsl(259, 100%, 65%);
+}
+.inpa:focus{
+    border-color: hsl(259, 100%, 65%);
+    outline: none;
 }
 .line{
     height:1.5px;
