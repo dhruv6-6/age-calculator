@@ -211,10 +211,47 @@ html, body {
 }
 @media only screen and (max-width: 500px){
     .center_side{
-        width: 260px;
-        background-color: orange;
+        width: 465px;
     }
     .top{
-        background-color: blue;
+        flex:2;
+    }
+    .bottom{
+        flex:3;
+    }
+    .middle{
+        height:550px;
+    }
+    .main1{
+        height: 190px;
+    }
+    .inp{
+        margin-top: 50px;
+        flex:1;
+    }
+    .one{
+        margin-left: 15px;
+    }
+    .dispm{
+        font-size: 14px;
+    }
+    .inpa{
+        margin-top: 8px;
+        width: 95px;
+        height:60px;
+        border-radius: 10px;
+    }
+    .line{
+        width:365px;
+        margin-right: 17px;
+        margin-top: 20px;
+    }
+    .main3{
+        top: 180px;
+        left:170px;
+    }
+    .main2{
+        margin-top: 50px;
+
     }
 }
