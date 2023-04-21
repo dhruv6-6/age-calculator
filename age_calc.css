@@ -211,7 +211,7 @@ html, body {
 }
 @media only screen and (max-width: 500px){
     .center_side{
-        width: 380px;
+        width: 350px;
     }
     .top{
         flex:2;
@@ -220,7 +220,7 @@ html, body {
         flex:3;
     }
     .middle{
-        height:530px;
+        height:510px;
     }
     .main1{
         height: 190px;
@@ -237,18 +237,18 @@ html, body {
     }
     .inpa{
         margin-top: 6px;
-        width: 88px;
-        height:60px;
+        width: 80px;
+        height:53px;
         border-radius: 10px;
     }
     .line{
-        width:340px;
+        width:310px;
         margin-right: 17px;
-        margin-top: 20px;
+        margin-top: 5px;
     }
     .main3{
-        top: 180px;
-        left:157px;
+        top: 165px;
+        left:148px;
         height: 70px;
         width: 70px;
         border-radius: 35px;
@@ -258,6 +258,6 @@ html, body {
     }
     .out{
         height:72px;
-        font-size: 55px;
+        font-size: 52px;
     }
 }
