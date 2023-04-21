@@ -209,9 +209,9 @@ html, body {
 .ey{
     color:white;
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 450px){
     .center_side{
-        width: 350px;
+        width: 200px;
     }
     .top{
         flex:2;
