@@ -211,7 +211,7 @@ html, body {
 }
 @media only screen and (max-width: 450px){
     .center_side{
-        width: 200px;
+        width: 330px;
     }
     .top{
         flex:2;
