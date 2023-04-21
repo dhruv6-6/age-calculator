@@ -233,22 +233,22 @@ html, body {
         margin-left: 20px;
     }
     .dispm{
-        font-size: 14px;
+        font-size: 13px;
     }
     .inpa{
-        margin-top: 6px;
-        width: 80px;
-        height:53px;
+        margin-top: 8px;
+        width: 71px;
+        height:55px;
         border-radius: 10px;
     }
     .line{
-        width:310px;
+        width:295px;
         margin-right: 17px;
         margin-top: 5px;
     }
     .main3{
         top: 165px;
-        left:148px;
+        left:132px;
         height: 70px;
         width: 70px;
         border-radius: 35px;
@@ -258,6 +258,12 @@ html, body {
     }
     .out{
         height:72px;
-        font-size: 52px;
+        font-size: 50px;
+    }
+    .errorf{
+        width: 100px;
+    }
+    .errors{
+        width: 100px;
     }
 }
